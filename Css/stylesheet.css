@@ -14,14 +14,12 @@ header{
 
 body{
     overflow: auto;
-}
-.HeaderBG{
     animation: background-pan 15s linear infinite;
     background: linear-gradient(to right, #740696, #C70A80, #740696);
     background-size: 200%;
 }
 
-.HeaderBG.toggled {
+body.toggled {
     animation: none;
 }
 

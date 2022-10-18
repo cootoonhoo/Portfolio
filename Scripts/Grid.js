@@ -1,17 +1,18 @@
 const wrapper = document.getElementById("tiles");
+const bgWrapper = document.getElementsByClassName("HeaderBG");
 
 let columns = 0,
     rows = 0,
-    toggled = false;
+    toggled = true;
 
     const toggle = () => {
         toggled = !toggled;
-        
         document.body.classList.toggle("toggled");
       }
 
 const handleOnClick = index =>{
     toggle();
+
     anime({
         targets: ".tile",
         opacity: toggled ? 1 : 0,
