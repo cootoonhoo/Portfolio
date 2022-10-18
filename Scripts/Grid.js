@@ -1,5 +1,4 @@
 const wrapper = document.getElementById("tiles");
-const bgWrapper = document.getElementsByClassName("HeaderBG");
 
 let columns = 0,
     rows = 0,
@@ -40,8 +39,10 @@ const createTiles = quantity =>{
 
 const createGrid = () =>{
     wrapper.innerHTML = "";
-    columns = Math.floor(document.body.clientWidth/90),
-    rows = Math.floor(document.body.clientHeight/300);
+    const size = document.body.clientWidth > 800 ? 150 : 75;
+
+    columns = Math.floor(document.body.clientWidth/size),
+    rows = Math.floor(document.body.clientHeight/size);
     
     wrapper.style.setProperty("--columns", columns);
     wrapper.style.setProperty("--rows", rows);
@@ -50,4 +51,6 @@ const createGrid = () =>{
 }
 
 createGrid();
+if(!toggle){
 window.onresize = () => createGrid();
+}
