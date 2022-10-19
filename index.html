@@ -24,125 +24,135 @@
         </nav>
     </header>
     <div id="Content">
-        <div id="AboutMe">
-            <h3>Sobre mim</h3>
+        <div id="AboutMe" class="anchor">
+        <h3>Sobre mim</h3>
+        <hr>
+        <div class="Inside">
+            <img src="./Images/Eu.jpg">
             <div class="text">
-                <p>Sou apaixonado por computação desde minha adolescência onde tive meu primeiro contato com programação durante o ensino médio.</p>
-                <p>Sempre me interessei em problemas lógicos e com TI me sinto contemplado. Sinto que essa área me proporciona um desenvolvimento criativo</p>
-                <p>a cada vez que me surge um desafio. Além disso, ter contato com meu lado artístico por meio do web design me inspira, já que consigo expor</p>
-                <p>meu lado artístico. Sendo assim, admirio muito o desenvolvimento web, sempre procurando maneiras de me desafiar e aprender novas tecnologias.</p>
+                <p>Sou apaixonado por computação desde minha adolescência onde tive meu primeiro contato com programação durante o ensino médio.
+                    Sempre me interessei em problemas lógicos e com TI me sinto contemplado. Sinto que essa área me proporciona um desenvolvimento criativo
+                    a cada vez que me surge um desafio. Além disso, ter contato com meu lado artístico por meio do web design me inspira, já que consigo expor
+                    meu lado artístico. Sendo assim, admirio muito o desenvolvimento web, sempre procurando maneiras de me desafiar e aprender novas tecnologias.</p>
             </div>
         </div>
-        <div id="JobExperience">
-            <h3>Experiencia Profissional</h3>
-            <h4>Analista de sistemas</h4>
-            <h5>Banco Safra</h5>
-            <div>
-                <img>
-                <p>Maio de 2022 - Atualmente</p>
-                <p>São Paulo, Brasil</p>
+        </div>
+        <div id="JobExperience" class="anchor">
+        <h3>Experiencia Profissional</h3>
+        <hr>
+        <h4>Analista de sistemas</h4>
+        <h5>Banco Safra</h5>
+        <div class="Card">
+            <img src="./Images/Safra.png">
+            <p>São Paulo, Brasil <br>
+            Maio de 2022 - Atualmente</p>
+        </div>
+        <h4>Instrutor de programação</h4>
+        <h5>Happy Code</h5>
+        <div class="Card">
+            <img src="./Images/Happy.jpg">
+            <p> Uberlândia, Minas Gerais, Brasil <br>
+            Junho de 2021 - Maio de 2022 <br>
+            <br>
+            Trabalhei dando suporte teórico na parte de programação e desenvolvimento de jogos
+            Atuava na educação de pensamento computacional utilizando ferramentas como Unity, Scratch e MinecraftEducation.
+            </p>
+        </div>
+        <h4>Gerente de marketing</h4>
+        <h5>ConsultEQ</h5>
+        <div class="Card">
+            <img src="./Images/Consulteq.png">
+            <p>Uberlândia, Minas Gerais, Brasil<br>
+            Dezembro de 2020 - Junho de 2021<br>
+            <br>
+            Atuava coordenando a Social Midia, estruturando campanhas publicitárias
+            com GoogleAds e FacebookAds, gerenciando produção interna de conteúdos e
+            manutenção do site da empresa.</p>
+        </div>
+        <h4>Consultor de marketing</h4>
+        <h5>ConsultEQ</h5>
+        <div class="Card">
+            <img src="./Images/Consulteq.png">
+            <p>Uberlândia, Minas Gerais, Brasil<br>
+            Julho de 2020 - Dezembro de 2020<br>
+            <br>
+            Atuava na produção de artes para Social Media da empresa,
+            manutenção da qualidade visual e criação de conteúdos internos.</p>
+        </div>
+        </div>
+        <div id="Projects" class="anchor">
+        <h3>Projetos</h3>
+        <hr>
+        <div id="Flex">
+            <div class="SingleProject" 
+            onclick="OpenProject('https://github.com/cootoonhoo/LetsCode-WebApi/tree/main/Trabalho%20Final')">
+                <h4>Event API - C#</h4>
+                <p>Uma API feita para simular uma aplicação de
+                criação e reserva. Possui integração com banco de dados
+                e algumas regras de negócios.</p>
             </div>
-            <h4>Instrutor de programação</h4>
-            <h5>Happy Code</h5>
-            <div>
-                <img>
-                <p>Junho de 2021 - Maio de 2022</p>
-                <p>Uberlândia, Minas Gerais, Brasil</p>
-                <div class="text">
-                    <p>Trabalhei dando suporte teórico na parte de programação e desenvolvimento de jogos.</p>
-                    <p>Atuava na educação de pensamento computacional utilizando ferramentas como Unity, Scratch e MinecraftEducation</p>
-                </div>
+            <div class="SingleProject"
+            onclick="OpenProject('https://github.com/cootoonhoo/Novela_MexicanaGenerator')">
+                <h4>Gerador de novela mexicana - Python</h4>
+                <p>Um programa simples em python que trabalha com
+                manipulação de arquivos que gera automaticamente
+                um roteiro clichê de uma novela. Todo o script é
+                automatizado e respeita a ordem cronológica da própria historia.</p>
             </div>
-            <h4>Gerente de marketing</h4>
-            <h5>ConsultEQ</h5>
-            <div>
-                <img>
-                <p>Dezembro de 2020 - Junho de 2021</p>
-                <p>Uberlândia, Minas Gerais, Brasil</p>
-                <div class="text">
-                    <p>Atuava coordenando a Social Midia, estruturando campanhas publicitárias</p>
-                    <p>com GoogleAds e FacebookAds, gerenciando produção interna de conteúdos e</p>
-                    <p>manutenção do site da empresa.</p>
-                </div>
+        </div>
+        <div id="Flex">
+            <div  class="SingleProject"
+            onclick="OpenProject('https://github.com/cootoonhoo/LetSafe')">
+                <h4>LetSafe - C#</h4>
+                    <p>Uma aplicação em WindosForms para simular um sistema
+                    de uma seguradora. Existe uma integração com banco de dados
+                    onde é resgatado cadastros, contratos, sinistros, etc...
+                    Esse projeto foi feito em conjunto com <a href="https://github.com/carvalhosmari">Mariane de Souza Carvalho</a>
+                    e <a href="https://github.com/MatAmaro/">Matheus Amaro Silva</a></p>
             </div>
-            <h4>Consultor de marketing</h4>
-            <h5>ConsultEQ</h5>
-            <div>
-                <img>
-                <p>Julho de 2020 - Dezembro de 2020</p>
-                <p>Uberlândia, Minas Gerais, Brasil</p>
-                <div class="text">
-                    <p>Atuava na produção de artes para Social Media da empresa,</p>
-                    <p>manutenção da qualidade visual e criação de conteúdos internos.</p>
+            <div class="SingleProject"
+            onclick="OpenProject('https://github.com/cootoonhoo/TopViewRPG-Unity')">
+                <h4>TopViewRPG - Unity</h4>
+                <div>
+                    <p>Um jogo feito no estilo RPG Top View onde busquei melhorar
+                    meus códigos dentro da Unity, buscando fazer um jogo mais robusto,
+                    onde seria fácil implementar novas funcionalidades sem quebrar meu código.</p>
                 </div>
             </div>
         </div>
-        <div id="Projects">
-            <h3>Projetos</h3>
-            <div class="Card" link="">
-                <h4>Event API</h4>
-                <h5>C#</h5>
-                <div>
-                    <p>Uma API feita para simular uma aplicação de</p>
-                    <p>criação e reserva. Possui integração com banco de dados</p>
-                    <p>e algumas regras de negócios.</p>
-                </div>
+        <div id="Flex">
+            <div class="SingleProject"
+            onclick="OpenProject('https://github.com/cootoonhoo/Missing-Unity')">
+                <h4>Missing - Unity</h4>
+                    <p>Meu primeiro jogo feito no Ensino Médio. Foi minha tentativa de criar
+                    um jogo no estilo Run and Gun. Não tem nenhum roteiro e o código é bem
+                    simples. Porém foi a primeira vez que tive autonima em um projeto :)</p>
             </div>
-            <div class="Card" link="">
-                <h4>Gerador de novela mexicana</h4>
-                <h5>Python</h5>
-                <div>
-                    <p>Um programa simples em python que trabalha com</p>
-                    <p>manipulação de arquivos que gera automaticamente</p>
-                    <p>um roteiro clichê de uma novela. Todo o script é</p>
-                    <p>automatizado e respeita a ordem cronológica da própria historia.</p>
-                </div>
-            </div>
-            <div class="Card" link="">
-                <h4>LetSafe</h4>
-                <h5>C#</h5>
-                <div>
-                    <p>Uma aplicação em WindosForms para simular um sistema</p>
-                    <p>de uma seguradora. Existe uma integração com banco de dados</p>
-                    <p>onde é resgatado cadastros, contratos, sinistros, etc...</p>
-                    <p>Esse projeto foi feito em conjunto com <a href="">Mariane de Souza Carvalho</a></p>
-                    <p>e <a href="">Matheus Amaro Silva</a></p>
-                </div>
-            </div>
-            <div class="Card" link="">
-                <h4>TopViewRPG</h4>
-                <h5>Unity - C#</h5>
-                <div>
-                    <p>Um jogo feito no estilo RPG Top View onde busquei melhorar</p>
-                    <p>meus códigos dentro da Unity, buscando fazer um jogo mais robusto,</p>
-                    <p>onde seria fácil implementar novas funcionalidades sem quebrar meu código.</p>
-                </div>
-            </div>
-            <div class="Card" link="">
-                <h4>Missing</h4>
-                <h5>Unity - C#</h5>
-                <div>
-                    <p>Meu primeiro jogo feito no Ensino Médio. Foi minha tentativa de criar</p>
-                    <p>um jogo no estilo Run and Gun. Não tem nenhum roteiro e o código é bem</p>
-                    <p>simples. Porém foi a primeira vez que tive autonima em um projeto :)</p>
-                </div>
             </div>
         </div>
         <div id="Education">
             <h3>Formação</h3>
+            <hr>
             <h4>Acadêmica</h4>
-            <h5>Engenharia - Universidade Federal de Uberlândia</h5>
-            <div>
-                <img>
-                <p>2019 - 2024</p>
-                <p>Uberlândia, Minas Gerais, Brasil</p>
+            <div id="Flex">
+                <div class="Academic">
+                <h5>Engenharia - Universidade Federal de Uberlândia</h5>
+                    <div>
+                        <img src="./Images/UFU.jpg">
+                        <p>2019 - 2024 <Br>
+                        Uberlândia, Minas Gerais, Brasil</p>
+                    </div>
+                </div>
+                <div class="Academic">
+                    <h5>Técnico em Computação Gráfica - Instituto Federal do Triangulo Mineiro</h5>
+                        <div>
+                            <img src="./Images/IFLogo.png"">
+                            <p>2016 - 2018 <Br>
+                            Uberlândia, Minas Gerais, Brasil</p>
+                        </div>
+                </div>
             </div>
-            <h5>Tecnico em Computação Gráfica - Insituto Federal do Triângulo Mineiro</h5>
-            <div>
-                <img>
-                <p>2016 - 2018</p>
-                <p>Uberlândia, Minas Gerais, Brasil</p>
-            </div>
+        </div>
             <h4>Certificações</h4>
             <h5>Top Coder - Full Stack</h5>
             <div>
@@ -166,6 +176,7 @@
                 <p>Udemy</p>
             </div>
         </div>
+    </div>
         <div id="Languages">
             <h3>Idiomas</h3>
             <div>
@@ -179,8 +190,8 @@
             <div>
                 <h4>Português</h4>
                 <h5>Fluente</h5>
+            </div>
         </div>
-    </div>
     <footer id="Contact">
         <h2>Contatos</h2>
         <p><a href="https://www.linkedin.com/in/marco-antonio-6307341a0/">Linkedin</a></p>
@@ -189,10 +200,14 @@
         <p><a>Email</a></p>
     </footer>
 
-    <!-- Script para o header-->
     <script src='https://kit.fontawesome.com/944eb371a4.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js'></script>
     <script  src="./Scripts/Grid.js"></script>
     <script  src="./Scripts/NavBar.js"></script>
+    <script>
+        function OpenProject(text){
+        window.open(text, '_blank' )
+        }
+    </script>
 </body>
 </html>

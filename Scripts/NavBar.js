@@ -3,7 +3,6 @@ const TopNav = navbar.offsetTop +50;
 
 window.onscroll = () =>{
     FixedInTop();
-    navbar.style.width = '{}'
 }
 
 function FixedInTop(){

@@ -9,6 +9,8 @@ button{
     cursor: pointer;
     outline: inherit;
 }
+
+
 a button {
     padding: 15px 45px;
     color: white;
@@ -44,22 +46,59 @@ nav {
 
 h3{
     font-family: 'Rubik', sans-serif;
-    font-size: 25px;
-    padding-top: 6%;
-    padding-bottom: 3%;
+    font-size: 30px;
+    padding-bottom: 15px;
 }
 
-p,h4,h5{
+h4{
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+}
+
+p,h5{
     font-family: 'Robto', sans-serif;
     font-size: 20px;
 }
+
+#AboutMe img{
+    width: 30%;
+    margin-right: 5%;
+}
+
 
 #Content{
     color: white;
     background-color: rgb(15, 15, 15);
     margin:0% 10%;
-    padding: 0 5%;
+    padding: 5% 5%;
+    
+}
 
+#Flex{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+#Education h4{
+    padding-bottom: 20px;
+}
+
+#Education h5{
+    padding-bottom: 18px;
+    font-weight: bold;
+    color: #C70A80;
+    padding-bottom: 10px;
+}
+
+.anchor{
+    padding-top: 120px;
+}
+
+.Inside{
+    padding: 10px;
 }
 
 .toggled nav {
@@ -68,6 +107,11 @@ p,h4,h5{
     opacity: 1;
 }
 
+.Inside{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
 .fixedOnTop{
    
     position: fixed;
@@ -78,3 +122,62 @@ p,h4,h5{
     min-width: 70vw;
 }
 
+.text{
+    max-width: 800px;
+    text-align: justify;
+}
+
+.Card{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+    padding: 10px 0px 40px 0px;
+}
+
+.Card p{
+    max-width: 30%;
+    text-align: justify;
+}
+
+.Card img{
+    padding-right: 20px;
+    width: 8%;
+    height: 8%;
+}
+
+.SingleProject{
+    background-color: rgb(30, 30, 30);
+    padding: 30px;
+    margin: 10px;
+    width: 500px;
+    cursor: pointer;
+}
+.SingleProject p{
+    padding-top: 10px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.SingleProject p a {
+    color: #C70A80;
+    text-decoration: none;
+    font-weight: bold;
+}
+.Academic{
+    margin: 30px;
+    padding: 30px;
+    background-color: rgb(30, 30, 30);;
+}
+
+.Academic div{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.Academic img{
+    width: 14%;
+    height: 14%;
+    padding-right: 30px;
+}
