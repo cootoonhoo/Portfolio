@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="./Css/reset.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="./Css/StyleSheetHeader.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="./Css/StyleSheetPage.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./Css/Footer.css" media="screen" />
     <title>Marco Antonio</title>
 </head>
 <body>
@@ -19,7 +20,6 @@
             <a href="#JobExperience"><button class="buttons">Experiência Profissional</button></a>
             <a href="#Projects"><button class="buttons">Projetos</button></a>
             <a href="#Education"><button class="buttons">Formação</button></a>
-            <a href="#Languages"><button class="buttons">Idiomas</button></a>
             <a href="#Contact"><button class="buttons">Contato</button></a>
         </nav>
     </header>
@@ -40,45 +40,60 @@
         <div id="JobExperience" class="anchor">
         <h3>Experiencia Profissional</h3>
         <hr>
-        <h4>Analista de sistemas</h4>
-        <h5>Banco Safra</h5>
-        <div class="Card">
-            <img src="./Images/Safra.png">
-            <p>São Paulo, Brasil <br>
-            Maio de 2022 - Atualmente</p>
-        </div>
-        <h4>Instrutor de programação</h4>
-        <h5>Happy Code</h5>
-        <div class="Card">
-            <img src="./Images/Happy.jpg">
-            <p> Uberlândia, Minas Gerais, Brasil <br>
-            Junho de 2021 - Maio de 2022 <br>
-            <br>
-            Trabalhei dando suporte teórico na parte de programação e desenvolvimento de jogos
-            Atuava na educação de pensamento computacional utilizando ferramentas como Unity, Scratch e MinecraftEducation.
-            </p>
-        </div>
-        <h4>Gerente de marketing</h4>
-        <h5>ConsultEQ</h5>
-        <div class="Card">
-            <img src="./Images/Consulteq.png">
-            <p>Uberlândia, Minas Gerais, Brasil<br>
-            Dezembro de 2020 - Junho de 2021<br>
-            <br>
-            Atuava coordenando a Social Midia, estruturando campanhas publicitárias
-            com GoogleAds e FacebookAds, gerenciando produção interna de conteúdos e
-            manutenção do site da empresa.</p>
-        </div>
-        <h4>Consultor de marketing</h4>
-        <h5>ConsultEQ</h5>
-        <div class="Card">
-            <img src="./Images/Consulteq.png">
-            <p>Uberlândia, Minas Gerais, Brasil<br>
-            Julho de 2020 - Dezembro de 2020<br>
-            <br>
-            Atuava na produção de artes para Social Media da empresa,
-            manutenção da qualidade visual e criação de conteúdos internos.</p>
-        </div>
+        <div class="flex">
+            <div class="CardDefault">
+                <h4>Analista de sistemas</h4>
+                <h5>Banco Safra</h5>
+                <div class="Card">
+                    <img src="./Images/Safra.png">
+                    <p>São Paulo, Brasil <br>
+                    Maio de 2022 - Atualmente<br>
+                    Atualmente, estou trabalnhando com AngularJS, C# e MySQL. Participo de algumas atividades internas do banco, principlamente voltadas para o Cockpit PJ.
+                </p>
+                </div>
+            </div>
+
+            <div class="CardDefault">
+                <h4>Instrutor de programação</h4>
+                <h5>Happy Code</h5>
+                <div class="Card">
+                    <img src="./Images/Happy.jpg">
+                    <p> Uberlândia, Minas Gerais, Brasil <br>
+                    Junho de 2021 - Maio de 2022 <br>
+                    <br>
+                    Trabalhei dando suporte teórico na parte de programação e desenvolvimento de jogos
+                    Atuava na educação de pensamento computacional utilizando ferramentas como Unity, Scratch e MinecraftEducation.
+                    </p>
+                </div>
+            </div>
+
+            <div class="CardDefault">
+                <h4>Gerente de marketing</h4>
+                <h5>ConsultEQ</h5>
+                <div class="Card">
+                    <img src="./Images/Consulteq.png">
+                    <p>Uberlândia, Minas Gerais, Brasil<br>
+                    Dezembro de 2020 - Junho de 2021<br>
+                    <br>
+                    Atuava coordenando a Social Midia, estruturando campanhas publicitárias
+                    com GoogleAds e FacebookAds, gerenciando produção interna de conteúdos e
+                    manutenção do site da empresa.</p>
+                </div>
+            </div>
+
+            <div class="CardDefault">
+                <h4>Consultor de marketing</h4>
+                <h5>ConsultEQ</h5>
+                <div class="Card">
+                    <img src="./Images/Consulteq.png">
+                    <p>Uberlândia, Minas Gerais, Brasil<br>
+                    Julho de 2020 - Dezembro de 2020<br>
+                    <br>
+                    Atuava na produção de artes para Social Media da empresa,
+                    manutenção da qualidade visual e criação de conteúdos internos.</p>
+                </div>
+            </div>
+        </div>  
         </div>
         <div id="Projects" class="anchor">
         <h3>Projetos</h3>
@@ -130,12 +145,12 @@
             </div>
             </div>
         </div>
-        <div id="Education">
+        <div id="Education" class="anchor">
             <h3>Formação</h3>
             <hr>
             <h4>Acadêmica</h4>
             <div id="Flex">
-                <div class="Academic">
+                <div class="CardDefault">
                 <h5>Engenharia - Universidade Federal de Uberlândia</h5>
                     <div>
                         <img src="./Images/UFU.jpg">
@@ -143,67 +158,64 @@
                         Uberlândia, Minas Gerais, Brasil</p>
                     </div>
                 </div>
-                <div class="Academic">
+                <div class="CardDefault">
                     <h5>Técnico em Computação Gráfica - Instituto Federal do Triangulo Mineiro</h5>
                         <div>
-                            <img src="./Images/IFLogo.png"">
+                            <img src="./Images/IFLogo.png">
                             <p>2016 - 2018 <Br>
                             Uberlândia, Minas Gerais, Brasil</p>
                         </div>
                 </div>
             </div>
         </div>
-            <h4>Certificações</h4>
-            <h5>Top Coder - Full Stack</h5>
-            <div>
-                <img>
-                <p>Fevereiro 2023</p>
-                <p>600 Horas</p>
-                <p>Let's Code from Ada</p>
+        <h4>Certificações</h4>
+        <div id="Flex">
+            <div class="CardDefault" id="Education">
+                <h5>Top Coder - Full Stack</h5>
+                <div>
+                    <img src="./Images/Ada.jpg">
+                    <p>Fevereiro 2023 <br>
+                    600 Horas <br>
+                    Let's Code from Ada</p>
+                </div>
             </div>
+
+            <div class="CardDefault" id="Education">
             <h5>Bootcamp - Front End Developer</h5>
-            <div>
-                <img>
-                <p>Fevereiro 2022</p>
-                <p>99 Horas</p>
-                <p>Digital Inovation One</p>
+                <div>
+                    <img src="./Images/dio.jpg">
+                    <p>Fevereiro 2022 <br>
+                    99 Horas <br>
+                    Digital Inovation One</p>
+                </div>
             </div>
-            <h5>Programação Orientada a Objetos C#</h5>
-            <div>
-                <img>
-                <p>Fevereiro 2022</p>
-                <p>37 Horas</p>
-                <p>Udemy</p>
+
+            <div class="CardDefault" id="Education">
+                <h5>Programação Orientada a Objetos C#</h5>
+                <div>
+                    <img src="./Images/udemy.png">
+                    <p>Fevereiro 2022 <br>
+                    37 Horas <br>
+                    Udemy</p>
+                </div>
             </div>
         </div>
     </div>
-        <div id="Languages">
-            <h3>Idiomas</h3>
-            <div>
-                <h4>Inglês</h4>
-                <h5>Avançado</h5>
-            </div>
-            <div>
-                <h4>Francês</h4>
-                <h5>Básico</h5>
-            </div>
-            <div>
-                <h4>Português</h4>
-                <h5>Fluente</h5>
-            </div>
-        </div>
+
     <footer id="Contact">
         <h2>Contatos</h2>
-        <p><a href="https://www.linkedin.com/in/marco-antonio-6307341a0/">Linkedin</a></p>
-        <p><a href="https://github.com/cootoonhoo">Github</a></p>
-        <p><a href="https://www.instagram.com/cootoonhoo/">Instagram</a></p>
-        <p><a>Email</a></p>
+        <div id="Flex">
+            <p><a href="https://www.linkedin.com/in/marco-antonio-6307341a0/" target="_blank">Linkedin</a></p>
+            <p><a href="https://github.com/cootoonhoo" target="_blank">Github</a></p>
+            <p><a href="https://www.instagram.com/cootoonhoo/" target="_blank">Instagram</a></p>
+            <p><a href="mailto: cootoonhoo@gmail.com" target="_blank" >Email</a></p>
+        </div>
     </footer>
 
     <script src='https://kit.fontawesome.com/944eb371a4.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js'></script>
-    <script  src="./Scripts/Grid.js"></script>
-    <script  src="./Scripts/NavBar.js"></script>
+    <script src="./Scripts/Grid.js"></script>
+    <script src="./Scripts/NavBar.js"></script>
     <script>
         function OpenProject(text){
         window.open(text, '_blank' )
