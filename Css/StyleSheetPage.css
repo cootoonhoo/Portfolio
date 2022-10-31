@@ -80,7 +80,8 @@ p,h5{
     background-color: rgb(15, 15, 15);
     margin:0% 10%;
     padding: 5% 5%;
-    
+
+    transition: translate 300ms, opacity 200ms;
 }
 
 #Flex{
@@ -113,7 +114,6 @@ p,h5{
 .Inside{
     padding: 10px;
 }
-
 .toggled nav {
     transition: opacity 400ms 400ms ease;
     z-index: 3;

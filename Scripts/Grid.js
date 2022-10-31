@@ -1,3 +1,4 @@
+var ContentWrapper = document.getElementById('Content')
 const wrapper = document.getElementById("tiles");
 
 let columns = 0,
@@ -7,10 +8,21 @@ let columns = 0,
     const toggle = () => {
         toggled = !toggled;
         document.body.classList.toggle("toggled");
-      }
-
-const handleOnClick = index =>{
+    }
+    
+    const handleOnClick = index =>{
     toggle();
+    setTimeout(() =>{
+        if(!toggled){
+            ContentWrapper.style.setProperty('translate', '0px -230px')
+            ContentWrapper.style.setProperty('opacity', '1')
+            }
+    }, 500)
+    
+    if(toggled){
+        ContentWrapper.style.setProperty('translate', '0px 0px')
+        ContentWrapper.style.setProperty('opacity', '0')
+        }
 
     anime({
         targets: ".tile",
